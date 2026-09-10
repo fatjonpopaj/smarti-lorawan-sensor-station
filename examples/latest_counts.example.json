@@ -1,0 +1,10 @@
+{
+  "type": "measure",
+  "id": 101,
+  "time": 0,
+  "readings": {
+    "person_count": 0,
+    "bicycle_count": 0,
+    "car_count": 0
+  }
+}

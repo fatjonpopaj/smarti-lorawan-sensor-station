@@ -137,6 +137,30 @@ python src/camera/traffic_counter.py \
 
 Use `ttn/uplink_payload_formatter.js` as the JavaScript uplink formatter in The Things Network. It decodes `0x01` login and `0x02` measure messages.
 
+
+
+## Documentation
+
+Detailed technical documentation is available in the `docs/` directory:
+
+- [Architecture](docs/architecture.md)
+- [Hardware](docs/hardware.md)
+- [Payload protocol](docs/payload-protocol.md)
+- [Testing](docs/testing.md)
+- [Troubleshooting](docs/troubleshooting.md)
+
+## Automated Tests
+
+The binary protocol can be tested without Raspberry Pi hardware:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+A GitHub Actions workflow runs these protocol tests automatically on pushes and pull requests.
+
+The hardware-dependent sensor and camera components still require a Raspberry Pi and the connected devices for end-to-end testing.
+
 ## University Project Background
 
 Smarti was developed as a bachelor practice project in Applied Computer Science. The overall system combined distributed sensor stations, LoRaWAN communication, backend services, data persistence and a web frontend for monitoring and visualization.
