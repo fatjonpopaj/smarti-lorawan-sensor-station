@@ -1,0 +1,6 @@
+{
+  "station_id": 101,
+  "device_name": "sensor-station-pi4-01",
+  "device_type": "raspberrypi4",
+  "firmware_version": "1.0"
+}
